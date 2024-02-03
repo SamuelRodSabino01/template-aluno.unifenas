@@ -2,14 +2,14 @@
 <html lang="pt-br">
   
 <meta http-equiv="content-type" content="text/html;charset=utf-8" />
-<head>
+  <head>
     <meta charset="utf-8">
-    <title>Login - UNIFENAS</title>
+    <title>Aluno | Unifenas</title>
 
     <!-- SEO Meta Tags -->
-    <meta name="description" content="Silicon - Multipurpose Technology Bootstrap Template">
-    <meta name="keywords" content="bootstrap, business, creative agency, mobile app showcase, saas, fintech, finance, online courses, software, medical, conference landing, services, e-commerce, shopping cart, multipurpose, shop, ui kit, marketing, seo, landing, blog, portfolio, html5, css3, javascript, gallery, slider, touch, creative">
-    <meta name="author" content="Createx Studio">
+    <meta name="description" content="Portal do aluno - Unifenas">
+    <meta name="keywords" content="UNIFENAS, Universidade, Professor, Edson, Antônio, Velano, Medicina, Cursos, Curso superior, faculdade, estudos, estudar">
+    <meta name="author" content="Samuel Rodrigues Sabino">
 
     <!-- Viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -110,17 +110,6 @@
       }
     </style>
 
-    <!-- Theme mode -->
-    <script>
-      let mode = window.localStorage.getItem('mode'),
-          root = document.getElementsByTagName('html')[0];
-      if (mode !== null && mode === 'dark') {
-        root.classList.add('dark-mode');
-      } else {
-        root.classList.remove('dark-mode');
-      }
-    </script>
-
     <!-- Page loading scripts -->
     <script>
       (function () {
@@ -133,19 +122,7 @@
         };
       })();
     </script>
-
-    <!-- Google Tag Manager -->
-    <script>
-      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-      '../www.googletagmanager.com/gtm5445.html?id='+i+dl;f.parentNode.insertBefore(j,f);
-      })(window,document,'script','dataLayer','GTM-WKV3GT5');
-    </script>
   </head>
-
-
-  <!-- Body -->
   <body>
 
     <!-- Page loading spinner -->
@@ -156,7 +133,8 @@
     </div>
 
     <main class="page-wrapper">
-      
+
+      <!-- Header -->
       <header class="navbar navbar-expand-lg bg-light shadow-sm">
         <div class="container">
           <a href="#" class="navbar-brand">
@@ -180,14 +158,44 @@
               <li class="nav-item">
                 <a class="nav-link" href="#">TiuWeb</a>
               </li>
+              <li class="nav-item">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalId">Dúvidas Frequentes</button>
+                <div class="modal fade" id="modalId" tabindex="-1" role="dialog">
+                  <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h4 class="modal-title">Dúvidas Frequentes</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <ul>
+                          <li><b>Como acessar o meu portal?</b></li>
+                          <span>Para acessar o portal você deverá fazer login utilizando sua matrícula e seu CPF</span><br><br>
+                          <li><b>Qual o meu usuário e senha do novo portal?</b></li>
+                          <span>No primeiro acesso você deverá usar sua matrícula ou CPF(apenas números) e a senha será seu CPF(apenas números).</span><br><br>
+                          <li><b>Não estou conseguindo acessar o meu Portal, o que devo fazer?</b></li>
+                          <span>Se o problema for com a sua senha, você poderá clicar no link <a href="#">Esqueci a minha senha</a> e será enviada uma nova senha de acesso para o e-mail cadastrado.
+                            Caso você não consiga, procure a secretaria acadêmica do seu Campus.
+                            Para outros problemas, procure a nossa Central de Relacionamento UNIFENAS (31) 4000 - 2386 / (31) 99639-5471 - Cobrança</span><br><br>
+                          <li><b>Como acesso minhas disciplinas EAD através do Moodle?</b></li>
+                          <span>Após fazer login no Portal do Aluno, você deverá acessar o menu 'Links do Sistema' e posteriormente clicar em 'Moodle'.</span><br><br>
+                          <li><b>Como faço para obter suporte do Portal?</b></li>
+                          <span>Você poderá fazer contato com a Central de Relacionamento através do Whatsapp ou ainda pelo e-mail <a href="#">centralderelacionamento@unifenas.br</a></span><br><br>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
             </ul>
           </nav>
         </div>
       </header>
 
-      <!-- Page content -->
-      <section class="position-relative h-100">
-        <!-- Sign in form -->
+      <!-- Conteudo -->
+      <section class="position-relative pt-4">
+
+        <!-- Area de login -->
         <div class="container d-flex flex-wrap justify-content-center justify-content-xl-start h-100">
           <div class="w-100 pt-5" style="max-width: 526px;">
             <h1 class="text-center text-xl-start">Olá Aluno(a),</h1>
@@ -216,7 +224,7 @@
           </div>
         </div>
         
-        <!-- Background -->
+        <!-- Informações -->
         <div class="position-absolute top-0 end-0 w-50 h-100 bg-position-center bg-repeat-0 bg-size-cover d-none d-xl-block">
           <div class="background-image">
             <img src="assets/img/img.png" alt="Nova-Matrícula">
@@ -224,14 +232,6 @@
         </div>
       </section>
     </main>
-
-
-    <!-- Back to top button -->
-    <!-- <a href="#top" class="btn-scroll-top" data-scroll>
-      <span class="btn-scroll-top-tooltip text-muted fs-sm me-2">Top</span>
-      <i class="btn-scroll-top-icon bx bx-chevron-up"></i>
-    </a> -->
-
 
     <!-- Vendor Scripts -->
     <script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
