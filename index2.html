@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+  <head>
+    <meta charset="utf-8">
+    <title>Aluno | Unifenas</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Portal do aluno - Unifenas">
+    <meta name="keywords" content="UNIFENAS, Universidade, Professor, Edson, Antônio, Velano, Medicina, Cursos, Curso superior, faculdade, estudos, estudar">
+    <meta name="author" content="Samuel Rodrigues Sabino">
+
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Favicon and Touch Icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#6366f1">
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#080032">
+    <meta name="msapplication-config" content="assets/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Vendor Styles -->
+    <link rel="stylesheet" media="screen" href="assets/vendor/boxicons/css/boxicons.min.css"/>
+
+    <!-- Main Theme Styles + Bootstrap -->
+    <link rel="stylesheet" media="screen" href="assets/css/theme.min.css">
+
+    <!-- Page loading styles -->
+    <style>
+      .page-loading {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        -webkit-transition: all .4s .2s ease-in-out;
+        transition: all .4s .2s ease-in-out;
+        background-color: #fff;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 9999;
+      }
+      .dark-mode .page-loading {
+        background-color: #0b0f19;
+      }
+      .page-loading.active {
+        opacity: 1;
+        visibility: visible;
+      }
+      .page-loading-inner {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        -webkit-transition: opacity .2s ease-in-out;
+        transition: opacity .2s ease-in-out;
+        opacity: 0;
+      }
+      .page-loading.active > .page-loading-inner {
+        opacity: 1;
+      }
+      .page-loading-inner > span {
+        display: block;
+        font-size: 1rem;
+        font-weight: normal;
+        color: #9397ad;
+      }
+      .dark-mode .page-loading-inner > span {
+        color: #fff;
+        opacity: .6;
+      }
+      .page-spinner {
+        display: inline-block;
+        width: 2.75rem;
+        height: 2.75rem;
+        margin-bottom: .75rem;
+        vertical-align: text-bottom;
+        border: .15em solid #b4b7c9;
+        border-right-color: transparent;
+        border-radius: 50%;
+        -webkit-animation: spinner .75s linear infinite;
+        animation: spinner .75s linear infinite;
+      }
+      .dark-mode .page-spinner {
+        border-color: rgba(255,255,255,.4);
+        border-right-color: transparent;
+      }
+      @-webkit-keyframes spinner {
+        100% {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+      @keyframes spinner {
+        100% {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+
+    <!-- Page loading scripts -->
+    <script>
+      (function () {
+        window.onload = function () {
+          const preloader = document.querySelector('.page-loading');
+          preloader.classList.remove('active');
+          setTimeout(function () {
+            preloader.remove();
+          }, 1000);
+        };
+      })();
+    </script>
+  </head>
+  <body>
+
+    <!-- Page loading spinner -->
+    <div class="page-loading active">
+      <div class="page-loading-inner">
+        <div class="page-spinner"></div><span>Loading...</span>
+      </div>
+    </div>
+
+    <main class="page-wrapper">
+
+      <!-- Header -->
+      <div class="barra-azul bg-primary" style="height: 15px;"></div>
+      <header class="navbar navbar-expand-lg bg-light shadow-sm">
+        <div class="container">
+          <a href="#" class="navbar-brand">
+            <img src="assets/img/logo.svg" width="200" alt="Unifenas">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse1" aria-expanded="false">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <nav id="navbarCollapse1" class="collapse navbar-collapse">
+            <hr class="d-lg-none mt-3 mb-2">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a href="https://www.unifenas.br/portaldoaluno.asp" class="nav-link" target="_blank">Calendário Acadêmico</a>
+              </li>
+              <li class="nav-item">
+                <a href="https://api.whatsapp.com/send/?phone=553140002386&text&app_absent=0" class="nav-link" target="_blank">Central de Relacionamento</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://aluno.unifenas.br/manual_chatbot_unifenas_atualizado.pdf" target="_blank">Manual ChatBot</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="http://tiu.unifenas.br/" target="_blank">TiuWeb</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#modalId">Dúvidas Frequentes</a>
+                <div class="modal fade" id="modalId" tabindex="-1" role="dialog">
+                  <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h4 class="modal-title">Dúvidas Frequentes</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <ul>
+                          <li><b>Como acessar o meu portal?</b></li>
+                          <span>Para acessar o portal você deverá fazer login utilizando sua matrícula e seu CPF</span><br><br>
+                          <li><b>Qual o meu usuário e senha do novo portal?</b></li>
+                          <span>No primeiro acesso você deverá usar sua matrícula ou CPF(apenas números) e a senha será seu CPF(apenas números).</span><br><br>
+                          <li><b>Não estou conseguindo acessar o meu Portal, o que devo fazer?</b></li>
+                          <span>Se o problema for com a sua senha, você poderá clicar no link <a href="#">Esqueci a minha senha</a> e será enviada uma nova senha de acesso para o e-mail cadastrado.
+                            Caso você não consiga, procure a secretaria acadêmica do seu Campus.
+                            Para outros problemas, procure a nossa Central de Relacionamento UNIFENAS (31) 4000 - 2386 / (31) 99639-5471 - Cobrança</span><br><br>
+                          <li><b>Como acesso minhas disciplinas EAD através do Moodle?</b></li>
+                          <span>Após fazer login no Portal do Aluno, você deverá acessar o menu 'Links do Sistema' e posteriormente clicar em 'Moodle'.</span><br><br>
+                          <li><b>Como faço para obter suporte do Portal?</b></li>
+                          <span>Você poderá fazer contato com a Central de Relacionamento através do Whatsapp ou ainda pelo e-mail <a href="#">centralderelacionamento@unifenas.br</a></span><br><br>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <!-- Conteudo -->
+      <section>
+        <div class="col-md-12">
+          <div class="container row">
+            <div class="col-md-6 informacoes"></div>
+            <div class="col-md-6"></div>
+          </div>
+        </div>
+      </section>     
+    </main>
+
+    <!-- Vendor Scripts -->
+    <script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+
+    <!-- Main Theme Script -->
+    <script src="assets/js/theme.min.js"></script>
+  </body>
+</html>
