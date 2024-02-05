@@ -5,9 +5,10 @@ body{
     background-color: #00c2e0;
 }
 .area-login{
-    width: 95%;
+    width: 100%;
     border-radius: 30px;
     background-color: #0d436e;
+    margin-left: 10%;
 }
 .form-login{
     margin-left: 40px;
@@ -22,9 +23,6 @@ body{
 }
 .btn-primary:hover{
     background-color: #00b8d4;
-}
-.informacoes img{
-    margin-left: 50px;
 }
 @media only screen and (max-width: 600px){
     .informacoes{
