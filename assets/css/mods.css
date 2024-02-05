@@ -5,9 +5,8 @@ body{
     background-color: #00c2e0;
 }
 .area-login{
-    width: 100%;
+    width: 95%;
     border-radius: 30px;
-    margin-left: 100px;
     background-color: #0d436e;
 }
 .form-login{
