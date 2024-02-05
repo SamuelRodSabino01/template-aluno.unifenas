@@ -30,6 +30,7 @@
 
     <!-- Main Theme Styles + Bootstrap -->
     <link rel="stylesheet" media="screen" href="assets/css/theme.min.css">
+    <link rel="stylesheet" href="assets/css/mods.css">
 
     <!-- Page loading styles -->
     <style>
@@ -135,8 +136,8 @@
     <main class="page-wrapper">
 
       <!-- Header -->
-      <div class="barra-azul bg-primary" style="height: 15px;"></div>
-      <header class="navbar navbar-expand-lg bg-light shadow-sm">
+      <div class="barra-azul" style="height: 15px;"></div>
+      <header class="navbar navbar-expand-lg shadow-sm">
         <div class="container">
           <a href="#" class="navbar-brand">
             <img src="assets/img/logo.svg" width="200" alt="Unifenas">
@@ -197,8 +198,39 @@
       <section>
         <div class="col-md-12">
           <div class="container row">
-            <div class="col-md-6 informacoes"></div>
-            <div class="col-md-6"></div>
+            <div class="col-md-7 informacoes mt-4">
+              <img src="assets/img/img.png" alt="info">
+            </div>
+            <div class="col-md-5">
+              <!-- <div class="container"> -->
+                <div class="area-login mt-5">
+                  <div class="form-login pt-5">
+                    <h1 class="text-center text-xl-start">Olá Aluno(a),</h1>
+                    <p class="text-center text-xl-start pb-3 mb-3 text-white">Agora você tem um novo portal de acesso às suas informações acadêmicas.</p>
+                    <form class="needs-validation mb-2" novalidate>
+                      <div class="position-relative mb-4">
+                        <label for="email" class="form-label fs-base text-white">CPF ou Matrícula</label>
+                        <input type="email" id="email" class="form-control form-control-lg" required>
+                        <div class="invalid-feedback position-absolute start-0 top-100">Digite seu CPF ou Matrícula!</div>
+                      </div>
+                      <div class="mb-4">
+                        <label for="password" class="form-label fs-base text-white">Senha</label>
+                        <div class="password-toggle">
+                          <input type="password" id="password" class="form-control form-control-lg" required>
+                          <label class="password-toggle-btn" aria-label="Show/hide password">
+                            <input class="password-toggle-check" type="checkbox">
+                            <span class="password-toggle-indicator"></span>
+                          </label>
+                          <div class="invalid-feedback position-absolute start-0 top-100">Digite sua senha!</div>
+                        </div>
+                      </div>
+                      <button type="submit" class="btn btn-primary btn-lg w-100">Entrar</button>
+                    </form>
+                    <a href="#" class="btn btn-link btn-lg w-100 text-white">Esqueceu sua senha?</a>
+                  </div>
+                </div>
+              <!-- </div> -->
+            </div>
           </div>
         </div>
       </section>     

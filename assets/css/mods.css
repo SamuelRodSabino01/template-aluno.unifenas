@@ -1,0 +1,38 @@
+/* body{
+    background-color: #ecf0f1;
+} */
+.barra-azul{
+    background-color: #00c2e0;
+}
+.area-login{
+    width: 100%;
+    border-radius: 30px;
+    margin-left: 100px;
+    background-color: #0d436e;
+}
+.form-login{
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.form-login h1{
+    color: #00c2e0;
+}
+.btn-primary{
+    background-color: #00c2e0;
+    border-color:#00c2e0;;
+}
+.btn-primary:hover{
+    background-color: #00b8d4;
+}
+.informacoes img{
+    margin-left: 50px;
+}
+@media only screen and (max-width: 600px){
+    .informacoes{
+        display: none;
+    }
+    .area-login{
+        margin: 0 auto;
+        margin-left: 13px;
+    }
+}
